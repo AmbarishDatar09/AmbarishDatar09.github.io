@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Subscribe Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <script>
+    function ValidateEmail() {  
+        var emailid = document.getElementById("email");    
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+        if (!filter.test(emailid.value)) {  
+            alert('Please provide a valid email address...');  
+            email.focus;  
+            return false;  
+        }
+        else alert('You have been subscribed !!!');  
+    }   
+</script>
+  </head>
+  <body>
+    <!-- The NavBar displayed at the top -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="C:\Program Files\Sublime Text 3\Home.html">Home</a></li>
+          <li><a href="C:\Program Files\Sublime Text 3\About.html">About</a></li>
+          <li><a href="C:\Program Files\Sublime Text 3\Articles.html">Articles</a></li>
+          <li><a href="C:\Program Files\Sublime Text 3\Subscribe.html">Subscribe</a></li>
+          <li><a href="C:\Program Files\Sublime Text 3\FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- The first hero section, ie., the "has my account been compromised" section -->
+    <section>
+        <p class="leadsub">Subscribe</p>
+        <p class="sub-leadsub">
+          Subscribe with us to get notified when your account is compromised in the future. You will recieve notifications via email.</p><br>
+          <p class="sub-leadsub">Enter email for notification:</p><br>
+        <input type="text" id="email" class="inputs" placeholder="ex., mymail@email.com "/><br>
+        <p class="sub-leadsub"><br>Enter another email you wish to get notified upon:</p> <br>
+        <input type="text" id="email" class="inputs" placeholder="ex.,  mail1@email.com, mail2@email2.com... ">
+        <br>
+        <p><button class="check-buttonsub" name="Generate" onclick='Javascript:ValidateEmail();'>Generate</button></p> 
+    </section>
+    <br><br><br>
+    <footer>
+  <p>A project by SRM KTR students<br>
+</footer>
+  </body>
+</html>
